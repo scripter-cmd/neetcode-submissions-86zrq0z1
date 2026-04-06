@@ -1,0 +1,20 @@
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+        int hash[]=new int[10];
+        boolean flag=false;
+        a:
+        for(int i=0;i<nums.length;i++)
+        {
+           for(int j=i+1;j<nums.length;j++)
+           {
+                if(nums[i]==nums[j])
+                {
+                    flag=true;
+                    break a;
+                }
+           }
+            
+        }
+        return flag;
+    }
+}
